@@ -20,7 +20,7 @@ To run the website locally or contribute to the project, follow these steps:
 ### Clone the Repository
 
 ```bash
-- https://github.com/w3-software-intern-Riad/dynamic-property-details-website.git
+- https://github.com/w3-software-intern-Riad/dynamic-property-web.git
 - cd property-details-website 
 ```
 
@@ -34,7 +34,7 @@ Contributions are welcome! Here's how you can contribute:
 
 ### Fork the Repository
 ```bash
-- https://github.com/w3-software-intern-Riad/dynamic-property-details-website.git
+- https://github.com/w3-software-intern-Riad/dynamic-property-web.git
 - cd property-details-website
 ```
 ### Create a New Branch
