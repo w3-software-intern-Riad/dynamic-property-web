@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <style>
+        /* Styling for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Styling for the dropdown container */
+        .dropdown {
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div id="search-destination">
+            Search Destination
+            <div class="dropdown" id="destination-dropdown">
+                <!-- Dropdown content here -->
+                <ul>
+                    <li data-value="Destination 1">Destination 1</li>
+                    <li data-value="Destination 2">Destination 2</li>
+                    <li data-value="Destination 3">Destination 3</li>
+                </ul>
+            </div>
+        </div>
+        <div id="add-guest">
+            Add Guest
+            <div class="guest-options" id="guest-options">
+                <!-- Guest options content here -->
+                Guest Options Content
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const destinationDropdown = document.getElementById('destination-dropdown');
+            const addGuestText = document.getElementById('add-guest');
+
+            // Event listener for destination selection
+            destinationDropdown.addEventListener('click', function (event) {
+                if (event.target.tagName === 'LI') {
+                    const selectedDestination = event.target.getAttribute('data-value');
+                    document.getElementById('search-destination').textContent = selectedDestination;
+
+                    // After selecting destination, focus and open add guest options
+                    addGuestText.focus();
+                    document.getElementById('guest-options').style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

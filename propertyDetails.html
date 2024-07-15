@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/icons/titleIcon.png" type="image/x-icon">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="homePageStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+
+
+</head>
+
+<body>
+
+    <header>
+        <!--This header for desktop version start-->
+        <div class="header">
+            <div class="navbar">
+                <div class="navbarElement-1">
+                    <h3 id="cursor-pointer-clickable">Anywhere</h3>
+                    <span class="vertical-line"></span>
+                    <h3 id="cursor-pointer">Any week</h3>
+                    <span class="vertical-line"></span>
+                    <h3 id="cursor-pointer" class="nav-item-3">Add guest</h3>
+                    <img id="searchIcon" src="./assets/icons/magnifying-glass.png" />
+                </div>
+                <div class="navbarElement-2">
+                    <img id="languageIcon" src="./assets/icons/internet.png" alt="language" />
+                    <div class="userMenu">
+                        <img id="menuIcon" src="./assets/icons/menu.png" alt="menu" />
+                        <img id="userIcon" src="./assets/icons/user.png" alt="user" />
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <!--End-->
+
+        <!--This header for mobile version start-->
+        <div class="header-2">
+            <div class="left-side-header">
+                <img id="hostedIcon" src="./assets/icons/cross.png" alt="cross">
+                <img id="mediumIcon" src="./assets/icons/app.png" alt="app">
+                <div class="header-title">
+                    <h3 class="line-height">Get the app</h3>
+                    <h4 id="secondary-text-color">The fastest,easiest way</h4>
+                </div>
+
+            </div>
+            <button id="useApp">USE APP</button>
+        </div>
+    </header>
+    <!--End-->
+
+    <div id="toggle-header-div">
+        <div class="search-destination">
+            <h3>Where</h3>
+            <h4 id="clickable-search-destination">Search Destination</h4>
+        </div>
+        <div class="check-in">
+            <h3>Check-in</h3>
+            <div class="field">
+                <div class="control-check-in">
+                    <input id="bulma-datepicker-2" class="input" type="date">
+                   <h4 id="add-date-checkIn">Add date</h4>
+                </div>
+            </div>
+        </div>
+        <div class="check-out">
+            <h3>Check-out</h3>
+            <div class="field">
+                <div class="control-check-out">
+                    <input id="bulma-datepicker-3" class="input" type="date">
+                    <h4 id="add-date-checkout">Add date</h4>
+                </div>
+            </div>
+        </div>
+        <div class="add-guest">
+            <h3>Who</h3>
+            <h4 id="clickable-add-guest">Add guest</h4>
+        </div>
+        <img id="clickable-search-icon" src="./assets/icons/search-icon.png" alt="searchIcon">
+
+    </div>
+
+
+
+    <div class="overlay-country-div-mobile">
+
+        <h3>Search by region</h3>
+        <div class="overlay-row-1">
+            <div class="country-1">
+                <img id="countryImages" src="./assets/icons/countries.png" data-value="I'm flexible"
+                    alt="I'm flexible">
+                <h4>I'm flexible</h4>
+            </div>
+            <div class="country-2">
+                <img id="countryImages" src="./assets/icons/south-korea.png" data-value="South Asia"
+                    alt="South Asia">
+                <h4>South Asia</h4>
+            </div>
+            <div class="country-3">
+                <img id="countryImages" src="./assets/icons/canada.png" data-value="Canada" alt="Canada">
+                <h4>Canada</h4>
+            </div>
+        </div>
+        <div class="overlay-row-2">
+            <div class="country-4">
+                <img id="countryImages" src="./assets/icons/europe.png" data-value="Europe" alt="Europe">
+                <h4>Europe</h4>
+            </div>
+            <div class="country-5">
+                <img id="countryImages" src="./assets/icons/thailand.png" data-value="Thailand" alt="Thailand">
+                <h4>Thailand</h4>
+            </div>
+            <div class="country-6">
+                <img id="countryImages" src="./assets/icons/thailand.png" data-value="Middle East"
+                    alt="Middle East">
+                <h4>Middle East</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <!--This portion is for mobile version start-->
+        <div class="room-image">
+            <img id="mobile-banner" src="./assets/images/bedroom.jpg" alt="Bedroom" class="background-image">
+            <div class="navigation">
+                <img id="show-all-photos" src="./assets/icons/3dotmenu.png" alt="show all icon">
+                <div class="banner-button">
+                    <button class="share">
+                        <img id="hostedIcon" src="./assets/icons/share.png" alt="Share">
+                    </button>
+                    <button class="favorite">♡</button>
+                </div>
+
+            </div>
+            <div class="image-count">1 / 21</div>
+        </div>
+        <!--End-->
+
+
+        <!--This portion is for desktop version start-->
+        <div class="titlebar">
+            <h1 id="title">Comfy New Apt. in Pueblo Libre!</h1>
+            <div class="rightSideTitlebar">
+                <div class="shareDiv">
+                    <img id="shareIcon" src="./assets/icons/share.png" alt="share" />
+                    <h4 id="shareButton"><u id="cursor-pointer">Share</u></h4>
+
+                </div>
+                <div class="saveDiv">
+                    <i id="saveIcon" class="fas fa-heart"></i>
+                    <h4 id="saveButton"><u id="cursor-pointer">Save</u></h4>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="gallerySection">
+            <div class="overlay-country-div">
+
+                <h3>Search by region</h3>
+                <div class="overlay-row-1">
+                    <div class="country-1">
+                        <img id="countryImages" src="./assets/icons/countries.png" data-value="I'm flexible"
+                            alt="I'm flexible">
+                        <h4>I'm flexible</h4>
+                    </div>
+                    <div class="country-2">
+                        <img id="countryImages" src="./assets/icons/south-korea.png" data-value="South Asia"
+                            alt="South Asia">
+                        <h4>South Asia</h4>
+                    </div>
+                    <div class="country-3">
+                        <img id="countryImages" src="./assets/icons/canada.png" data-value="Canada" alt="Canada">
+                        <h4>Canada</h4>
+                    </div>
+                </div>
+                <div class="overlay-row-2">
+                    <div class="country-4">
+                        <img id="countryImages" src="./assets/icons/europe.png" data-value="Europe" alt="Europe">
+                        <h4>Europe</h4>
+                    </div>
+                    <div class="country-5">
+                        <img id="countryImages" src="./assets/icons/thailand.png" data-value="Thailand" alt="Thailand">
+                        <h4>Thailand</h4>
+                    </div>
+                    <div class="country-6">
+                        <img id="countryImages" src="./assets/icons/thailand.png" data-value="Middle East"
+                            alt="Middle East">
+                        <h4>Middle East</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="overlay-add-guest">
+                <div class="overlay-adult-guest">
+                    <div class="adult-info">
+                        <h2>Adults</h2>
+                       <h3 id="secondary-text-color">Ages 13 or above</h3>
+                    </div>
+                    <div class="adult-counter">
+                        <img id="substract-icon-adult" src="./assets/icons/dash.png" alt="decrement">
+    
+                        <h3 id="adult-people-number">0</h3>
+                        <img id="add-icon-adult" src="./assets/icons/add.png" alt="increment">
+    
+                    </div>
+                </div>
+                <hr>
+                
+                <div class="overlay-child-guest">
+                    <div class="adult-info">
+                        <h2>children</h2>
+                       <h3 id="secondary-text-color">Ages 2-12</h3>
+                    </div>
+                    <div class="children-counter">
+                        <img id="substract-icon-children" src="./assets/icons/dash.png" alt="decrement">
+    
+                        <h4 id="children-number">0</h4>
+                        <img id="add-icon-children" src="./assets/icons/add.png" alt="increment">
+    
+                    </div>
+                </div>
+                <hr>
+                <div class="overlay-infants-guest">
+                    <div class="adult-info">
+                        <h2>Infants</h2>
+                       <h3 id="secondary-text-color">Under 2</h3>
+                    </div>
+                    <div class="infants-counter">
+                        <img id="substract-icon-infant" src="./assets/icons/dash.png" alt="decrement">
+    
+                        <h4 id="infant-people-number">0</h4>
+                        <img id="add-icon-infant" src="./assets/icons/add.png" alt="increment">
+    
+                    </div>
+                   
+                </div>
+
+               
+                
+                <hr>
+                <div class="overlay-pet">
+                    <div class="adult-info">
+                        <h2>Pets</h2>
+                       <u id="secondary-text-color">Bringing a service animal?</u>
+                    </div>
+                    <div class="pet-counter">
+                        <img id="substract-icon-pet" src="./assets/icons/dash.png" alt="decrement">
+    
+                        <h4 id="pet-counter">0</h4>
+                        <img id="add-icon-pet" src="./assets/icons/add.png" alt="increment">
+    
+                    </div>
+                </div>
+
+             
+                
+            </div>
+
+            <img id="bedroomImages1" src="./assets/images/bedroom.jpg" alt="bedroom" />
+            <div class="secondImageSection">
+                <div class="secondImageSection-1">
+                    <img id="bedroomImages" src="./assets/images/b-2.jpg" alt="bedroom2" />
+                    <img id="bedroomImages" src="./assets/images/b-3.jpeg" alt="bedroom3">
+                </div>
+                <div class="secondImageSection-1">
+                    <img id="bedroomImages" src="./assets/images/b-2.jpg" alt="bedroom4" />
+                    <div class="overlay-container">
+                        <img id="bedroomImages" src="./assets/images/b-3.jpeg" alt="bedroom5">
+                        <div class="overlay">
+                           
+                            <span class="overlay-text">Show all photos</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fullGallery" id="fullGallery">
+            <button class="close" id="closeGallery">Close</button>
+            <div class="navigation-buttons">
+                <button id="prevButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+
+        <!--End-->
+        <br>
+
+
+
+        <!--Review Section Start-->
+
+        <div class="reviewSection">
+            <div class="reviewSectionLeft">
+                <div class="reviewTitle">
+                    <h2>Entire rental unit in Lima,Peru</h2>
+                    <h4 id="bedroomDetail">2 guests . 1 bedroom . 1 bed . 1 bath</h4>
+                    <div class="starIconDiv">
+                        <img id="starIcon" src="./assets/icons/star.png" alt="starIcon" />
+                        <h3>New</h3>
+                    </div>
+
+                </div>
+                <hr class="horizontalLine" />
+                <div class="hosted">
+                    <img id="hostedPerson" src="./assets/images/person.jpeg" alt="hostedUser" />
+                    <div class="hostedDetails">
+                        <h3>Hosted by Farnando</h3>
+                        <h4 id="hostedDetail">Superhosted . 7 years hosting</h4>
+
+                    </div>
+
+                </div>
+                <hr class="horizontalLine" />
+
+                <div class="hosted">
+                    <img id="hostedIcon" src="./assets/icons/door.png" alt="hostedUser" />
+                    <div class="hostedDetails">
+                        <h3 class="line-height">Self check-in</h3>
+                        <h4 id="hostedDetail">Check your self in with the smartlock</h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hosted">
+                    <img id="hostedIcon" src="./assets/icons/host.png" alt="hostedUser" />
+                    <div class="hostedDetails">
+                        <h3 class="line-height">Fernando is a Superhost</h3>
+                        <h4 id="hostedDetail">Superhosts are experienced, highly rated Hosts.</h4>
+
+                    </div>
+
+                </div>
+                <hr class="horizontalLine" />
+                <br>
+
+                <div class="footer-title-1">
+                    <h3 id="bedroomDetail">Some info has been automatically translated.</h3><u id="show-more-text">Show
+                        original</u>
+                </div>
+
+                <p>
+
+                    Welcome to our brand-new 1 bedroom apartment, in a quiet and central location next to a park! <br />
+                    <br>
+                    It's conveniently located in Pueblo Libre, just 25min. away from the airport. Steps away from
+                    Clínica Stella Maris, Universidad Antonio Ruiz de Montoya, Instituto Británico, Hospital Santa Rosa,
+                    YMCA Peru and Alas Peruanas University. It's also very close to La ...
+                </p>
+
+                <div class="showMore">
+                    <u id="show-more-text">Show More</u>
+                    <img id="starIcon" src="./assets//icons/right.png" alt="rightArrow" />
+                </div>
+                <br>
+                <hr>
+                <div class="sleep-space-div">
+                    <h2>Where you'll sleep</h2>
+                    <img id="sleepSpaceImage" src="./assets/images/bedroom.jpg" alt="bedroom">
+                    <h3 class="line-height">Bedroom</h3>
+                    <h4 id="secondary-text-color">1 double bed</h4>
+                </div>
+                <br>
+
+                <hr>
+                <br>
+
+                <div class="place-offer">
+                    <h2>What this place offers</h2>
+
+                    <div class="offer-list">
+                        <div class="left-list">
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/kitchen.png" alt="">
+                                <h4 id="secondary-text-color">kitchen</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/tv.png" alt="">
+                                <h4 id="secondary-text-color">Tv</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/washer.png" alt="">
+                                <h4 id="secondary-text-color">washer</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/hairdryer.png" alt="">
+                                <h4 id="secondary-text-color">hair dryer</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/carbon.png" alt="">
+                                <h4 id="secondary-text-color"><s>Carbon monoxide alarm</s></h4>
+                            </div>
+                        </div>
+
+                        <div class="right-list">
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/wifi.png" alt="">
+                                <h4 id="secondary-text-color">Wifi</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/elevator.png" alt="">
+                                <h4 id="secondary-text-color">Elevator</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/dryer.png" alt="">
+                                <h4 id="secondary-text-color">Dryer</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/refrigerator.png" alt="">
+                                <h4 id="secondary-text-color">Refrigerator</h4>
+                            </div>
+                            <div class="list-title-icon">
+                                <img id="commonListIcon" src="./assets/icons/smoke.png" alt="">
+                                <h4 id="secondary-text-color"><s>Smoke alarm</s></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-show-amenities">Show all 32 amenities</button>
+
+                </div>
+                <br>
+                <hr>
+                <br>
+
+                <div class="check-in-date">
+                    <h2>Select check-in date</h2>
+                    <h4 id="secondary-text-color">Add your travel dates for exact pricing</h4>
+
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                            <button class="prev-month">&lt;</button>
+                            <h2>July 2024</h2>
+                            <h2 id="august-month">August 2024</h2>
+                            <button class="next-month">&gt;</button>
+                        </div>
+                        <div class="calendars">
+                            <div class="month">
+                                <div class="weekdays">
+                                    <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                                </div>
+                                <div class="days">
+                                    <span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+                                    <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+                                    <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+                                    <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
+                                    <span>28</span><span>29</span><span>30</span><span>31</span>
+                                </div>
+                            </div>
+                            <div class="august-month">
+                                <div class="weekdays">
+                                    <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                                </div>
+                                <div class="days">
+                                    <span></span><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span>
+                                    <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                                    <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+                                    <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+                                    <span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar-footer">
+                            <img id="hostedIcon" src="./assets/icons/keyboard.png" alt="keyboard">
+                            <u id="third-text-color">Clear dates</u>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+
+
+            </div>
+            <div class="review-right-section">
+                <div class="reviewRightSection">
+                    <h2>Add dates for prices</h2>
+                    <table id="table1">
+                        <tr>
+                            <td>
+                                <div class="tableDiv">
+                                    <h3>check-in</h3>
+                                    <h5 id="add-date">Add date</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tableDiv">
+                                    <h3>check-Out</h3>
+                                    <h5 id="add-date">Add date</h5>
+                                </div>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="secondRow">
+                                    <div class="secondRowE1">
+                                        <h3>Guests</h3>
+                                        <h5>1 guest</h5>
+                                    </div>
+                                    <img id="starIcon" src="./assets/icons/icons8-down-arrow-52.png" alt="">
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="check-button">Check availability</button>
+                </div>
+                <br>
+                <br>
+                <div class="report-icon">
+                    <img id="hostedIcon" src="./assets/icons/red-flag.png" alt="report-icon">
+                    <u id="secondary-text-color">Report this listing</u>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <!--Review Section End-->
+        <br>
+        <hr>
+        <br>
+        <!--Second Portion Start -->
+        <div class="last-section">
+            <div class="no-review">
+                <h2>No reviews (yet)</h2>
+                <div class="no-review-subsec">
+                    <img id="hostedIcon" src="./assets/icons/star.png" alt="star">
+                    <p>
+                        This host has 310 reviews for other places to <br> stay.
+                        <a href="#" class="show-reviews-link">Show other reviews</a>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="map-section">
+                <h2>Where you'll be</h2>
+                <h4>Lima,Provincia de Lima, Peru</h4>
+                <img id="mapImage" src="./assets/images/map.png" alt="map">
+                <div class="showMore">
+                    <u id="show-more-text">Show More</u>
+                    <img id="starIcon" src="./assets/icons/right.png" alt="rightArrow" />
+                </div>
+
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h2>Meet your Host</h2>
+            <div class="meet-our-host">
+                <div class="left-details">
+                    <div class="super-host">
+                        <div class="sh-left-portion">
+                            <img id="hostedPerson" src="./assets/images/person.jpeg" alt="super-host">
+                            <h3>Fernando</h3>
+                            <div class="super-host-person">
+                                <img id="hostedIcon" src="./assets/icons/host.png" alt="keyboard">
+                                <h4>Superhost</h4>
+                            </div>
+
+
+                        </div>
+                        <div class="sh-right-portion">
+                            <h2>310</h2>
+                            <h4>Reviews</h4>
+                            <hr>
+                            <div class="rating-text">
+                                <h2>4.92</h2>
+                                <img id="hostedIcon" src="./assets//icons/star.png" alt="star" />
+                            </div>
+                            <h4>Rating</h4>
+                            <hr>
+                            <h2>7</h2>
+                            <h4>Year hosting</h4>
+
+                        </div>
+                    </div>
+
+                    <div class="born-detail">
+                        <img id="hostedIcon" src="./assets/icons/calendar.png" alt="">
+                        <h4>Born in the 80s</h4>
+
+                    </div>
+                    <div class="work-detail">
+                        <img id="hostedIcon" src="./assets/icons/work.png" alt="">
+                        <h4>My work:Hospitality</h4>
+
+                    </div>
+                    <p>
+
+
+                        Hello world! I love traveling and I also love welcoming <br>
+                        guests in my home country, Perú, meeting new...
+                    </p>
+                    <div class="showMore">
+                        <u id="show-more-text">Show More</u>
+                        <img id="starIcon" src="./assets/icons/right.png" alt="rightArrow" />
+                    </div>
+
+                </div>
+                <hr id="dummy-line">
+                <div class="right-details">
+                    <h3>Fernando is a Superhost</h3>
+                    <p>Superhosts are experienced,highly rated hosts who are comitted to providing great <br> stay for
+                        guests</p>
+                    <br>
+                    <h3>Co-hosts</h3>
+                    <div class="co-hosts">
+                        <img id="userImage" src="./assets/images/user.jpeg" alt="user">
+                        <h4>Percy</h4>
+                        <img id="userImage" src="./assets/icons/R--icon.png" alt="user">
+                        <h4>Raul</h4>
+                    </div>
+                    <br>
+                    <br>
+                    <h3>Host Details</h3>
+                    <h4 id="third-text-color">Response rate:100%</h4>
+                    <h4 id="third-text-color">Responds within an hour</h4>
+                    <button id="message-host">Message Host</button>
+                </div>
+
+
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <h2 id="things-to-know-title">Things to know</h2>
+
+            <br>
+
+            <div class="things-to-know">
+
+
+
+                <div class="first-col">
+
+                    <h4>House rules</h4>
+                    <h4 id="third-text-color">Check-in after 4:00 PM</h4>
+                    <h4 id="third-text-color">Checkout before 11:00 AM</h4>
+                    <h4 id="third-text-color">2 guests maximum</h4>
+                    <div class="showMore">
+                        <u id="show-more-text">Show More</u>
+                        <img id="starIcon" src="./assets/icons/right.png" alt="rightArrow" />
+                    </div>
+
+                </div>
+                <hr id="dummy-line">
+                <div class="second-col">
+
+                    <h4>Safety & property</h4>
+                    <h4 id="third-text-color">Carbon monoxide alarm not reported</h4>
+                    <h4 id="third-text-color">Smoke alarm not reported</h4>
+                    <h4 id="third-text-color">Not suitable for children and infants</h4>
+                    <div class="showMore">
+                        <u id="show-more-text">Show More</u>
+                        <img id="starIcon" src="./assets/icons/right.png" alt="rightArrow" />
+                    </div>
+
+                </div>
+                <hr id="dummy-line">
+                <div class="third-col">
+
+                    <h4>Cancellation policy</h4>
+                    <h4 id="third-text-color">Add your trip dates to get the Cancellation details for this stay</h4>
+
+                    <div class="showMore">
+                        <u id="show-more-text">Add dates</u>
+                        <img id="starIcon" src="./assets/icons/right.png" alt="rightArrow" />
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="report-icon-second">
+                <img id="hostedIcon" src="./assets/icons/red-flag.png" alt="report-icon">
+                <u id="secondary-text-color">Report this listing</u>
+            </div>
+            <br>
+
+
+            <br>
+
+            <div class="pagination-portion">
+                <h4>Peru > Lima Province > Jesus Maria</h4>
+            </div>
+            <h2>Explore other options in and around Lima</h2>
+            <div class="footer-portion-1">
+
+                <div class="footer-col-1">
+                    <h4>Cieneguilla</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+                    <h4>Chaclacayo</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+
+                    <h4>San Isidro</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+
+                </div>
+
+                <div class="footer-col-2">
+                    <h4>Punta Hermosa</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+                    <h4>Barranco</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+
+                    <h4>San Miguel</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+
+                </div>
+
+
+                <div class="footer-col-3">
+                    <h4>Asia</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+                    <h4>Santiago da Surco</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+
+                    <h4>Lunahuana</h4>
+                    <h4 id="secondary-text-color">Vacation rentals</h4>
+
+
+                </div>
+            </div>
+            <br>
+            <h3 id="disable-footer">
+                Other types of stays on Airbnb
+            </h3>
+            <div class="footer-portion-2">
+                <div class="first-text-footer">
+                    <h4>Jesus Maria vacation rentals</h4>
+                    <h4>Jesus Maria monthly stays</h4>
+                    <h4>Apartment vacation rentals in Jesus Maria</h4>
+                </div>
+                <h4>Apartment vacation rentals in Lima Province</h4>
+            </div>
+
+
+
+        </div>
+        <!--Second Portion End-->
+        </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.0.15/dist/js/bulma-calendar.min.js"></script>
+    <script src="pageDynamic.js"></script>
+    
+
+
+</body>
+
+</html>
